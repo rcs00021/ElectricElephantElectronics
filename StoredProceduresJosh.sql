@@ -28,7 +28,7 @@ GO
 -- This would run multiple times for different towns or exits along a given route
 -- This may be pretty tedious for a longer route so it may need revision
 
-CREATE PROC findPOIByRadius
+CREATE OR ALTER PROC findPOIByRadius
 
 	@lat decimal(9,6),
 	@long decimal(9,6),
