@@ -68,3 +68,7 @@ CREATE TABLE [dbo].[POI](
 	[POI_ZIP] [int] NULL
 )
 ```
+
+## Other
+
+https://github.com/joshuatmeadows/MIST353-TravelSite/blob/dev/SQL/TravelSiteDBStoredProcs2.sql was used to write findPOIByRadius. findPOIByRadius will be implemented in a much different way, as it will work at multiple points along a route rather than one set of coordinates. As the SP is written right now, it'll just repeat along the route at major towns/cities rather than run once.
