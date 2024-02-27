@@ -36,11 +36,12 @@ A project this ambitious undoubtedly has a need for database integration and sto
 ChatGPT prompt used for AddDriver. The sql code itself was changed after this prompt.
 
 
+```
 Working with SQL server, fill this table with mock data - around 20 entries should be fine
 
 Examples of position are Flatbed Driver, Auto Hauler, Freight Hauler, etc.
 
-```sql
+sql
 CREATE TABLE [dbo].[Driver](
 	[DID] [int] NOT NULL,
 	[Position] [varchar](50) NULL,
@@ -50,4 +51,5 @@ CREATE TABLE [dbo].[Driver](
 	[DLNum] [varchar](50) NULL
 ) ON [PRIMARY]
 GO
+```
 
