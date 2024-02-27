@@ -33,8 +33,7 @@ A project this ambitious undoubtedly has a need for database integration and sto
 
 ## ChatGPT
 
-ChatGPT prompt used for AddDriver. The sql code itself was changed after this prompt.
-
+### AddDriver Mock Data Prompt
 
 ```
 Working with SQL server, fill this table with mock data - around 20 entries should be fine
