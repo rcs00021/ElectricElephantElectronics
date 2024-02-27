@@ -28,3 +28,26 @@ A project this ambitious undoubtedly has a need for database integration and sto
 |     GetPartsFromUSA|A lot of people, especially those in full-time driving occupations, are very adamant about using US-made parts. This SP finds parts that were manufactured in the USA. Can be built to find based on any country, or based on other criteria. Plays a vital role in example feature 5.|
 |     AddDriver|Can be used by employers to list their drivers for contract work, or by prospective drivers to apply for job postings on the site. Plays vital role in example feature 1.|
 |     findPOIByRadius|Used to help find POI along a route planned in example features 3-4. Can find POI, like rest stops, within radius of road(s) traveled on. For example, a route going through Beckley, WV, will find the Tamarack as a POI using this SP.|
+
+# References
+
+## ChatGPT
+
+ChatGPT prompt used for AddDriver. The sql code itself was changed after this prompt.
+
+
+Working with SQL server, fill this table with mock data - around 20 entries should be fine
+
+Examples of position are Flatbed Driver, Auto Hauler, Freight Hauler, etc.
+
+```sql
+CREATE TABLE [dbo].[Driver](
+	[DID] [int] NOT NULL,
+	[Position] [varchar](50) NULL,
+	[Driver_First] [varchar](50) NULL,
+	[Driver_Last] [varchar](50) NULL,
+	[Hometown] [varchar](50) NULL,
+	[DLNum] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+
