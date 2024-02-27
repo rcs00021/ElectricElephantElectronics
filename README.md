@@ -52,3 +52,19 @@ CREATE TABLE [dbo].[Driver](
 GO
 ```
 
+### findPOIByRadius Mock Data Prompt
+
+```
+Working with sql server, generate some mock data for this table. POI examples are rest areas, truck stops, etc.
+
+SQL
+CREATE TABLE [dbo].[POI](
+	[POI_ID] [int] NOT NULL,
+	[POI_Name] [varchar](50) NULL,
+	[POI_Add_Num] [int] NULL,
+	[POI_Street] [varchar](50) NULL,
+	[POI_City] [varchar](50) NULL,
+	[POI_State] [varchar](50) NULL,
+	[POI_ZIP] [int] NULL
+)
+```
