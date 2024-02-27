@@ -24,7 +24,7 @@ A project this ambitious undoubtedly has a need for database integration and sto
 |-----:|-----------|
 |     spGetAllOccupations|List all occupations and their hourly pay. Plays vital role in example features 1-2|
 |     spAddLocation|Allows employers to add locations of potential job opportunities. Plays vital role in example features 1-2|
-|     spVehicleGetDetails|Used t obtain vehicle information on vehicles used for deliveries. Can be further developed to include parts.|
-|     spSearchPart|Used by users to get part numbers, replacement costs, and availability based on make/model of vehicle as well as climate data. Plays vital role in example feature 5.|
+|     GetManufacturerCount|Finds how many different car manufacturers are in the site's system. Useful building block for potential marketplace/forum storing all parts and manufacturers. Plays a vital role in example feature 5.|
+|     GetPartsFromUSA|A lot of people, especially those in full-time driving occupations, are very adamant about using US-made parts. This SP finds parts that were manufactured in the USA. Can be built to find based on any country, or based on other criteria. Plays a vital role in example feature 5.|
 |     AddDriver|Can be used by employers to list their drivers for contract work, or by prospective drivers to apply for job postings on the site. Plays vital role in example feature 1.|
 |     findPOIByRadius|Used to help find POI along a route planned in example features 3-4. Can find POI, like rest stops, within radius of road(s) traveled on. For example, a route going through Beckley, WV, will find the Tamarack as a POI using this SP.|
