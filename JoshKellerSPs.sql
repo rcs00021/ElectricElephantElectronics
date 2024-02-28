@@ -21,23 +21,17 @@ GO
 
 -- Josh Keller
 -- STORED PROCEDURE 6
--- Find POI within a radius
--- In theory this would look for a certain radius from the route taken
--- For example if a route went through Fayetteville on Route 19, it'd look for a given radius around Route 19
--- So the actual function of this differentiates a bit from the in-class example with the hotel
--- This would run multiple times for different towns or exits along a given route
--- This may be pretty tedious for a longer route so it may need revision
+-- Find POI within a given state
+-- This will be useful for long-distance trips where a driver may want to visit different POI in a state
+-- This may be a rest stop or monument
+-- For example, West Virginia would provide a variety including the Tamarack, New River Gorge, etc
 
-CREATE OR ALTER PROC findPOIByRadius
+CREATE OR ALTER PROC findPOIByState
 
-	@lat decimal(9,6),
-	@long decimal(9,6),
-	@radius int = null
-
+	@POI_State nvarchar(50)
 AS
 BEGIN
 
-	Select * FROM POI
-	WHERE sqrt(power((longitude-@long),2)+power((latitude-@lt,2))*69<isnull(@radius,5)
+	Select * FROM POI WHERE POI_State = @POI_State
 END
 GO

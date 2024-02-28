@@ -49,13 +49,13 @@ GO
 -- Prompt in READMME
 -- Inserting mock data into POI table
 
-INSERT INTO POI (POI_ID, POI_Name, POI_Add_Num, POI_Street, POI_City, POI_ZIP)
+INSERT INTO POI (POI_ID, POI_Name, POI_Add_Num, POI_Street, POI_City, POI_State, POI_ZIP)
 VALUES
-(1, 'Rest Area 1', 100, 'Highway 1', 'Springfield', 'IL', 62701),
-(2, 'Truck Stop 24/7', 200, 'Interstate 55', 'Lexington', 'KY', 40502),
-(3, 'Travel Plaza', 300, 'Highway 101', 'Bakersfield', 'CA', 93301),
-(4, 'Rest Haven', 400, 'Interstate 80', 'Omaha', 'NE', 68101),
-(5, 'Roadside Oasis', 500, 'Highway 20', 'Boise', 'ID', 83701);
+(1, 'Rest Area 1', 100, 'Highway 1', 'Springfield', 'Illinois', 62701),
+(2, 'Truck Stop 24/7', 200, 'Interstate 55', 'Lexington', 'Kentucky', 40502),
+(3, 'Travel Plaza', 300, 'Highway 101', 'Bakersfield', 'California', 93301),
+(4, 'Rest Haven', 400, 'Interstate 80', 'Omaha', 'Nebraska', 68101),
+(5, 'Roadside Oasis', 500, 'Highway 20', 'Boise', 'Idaho', 83701);
 GO
 
 --Josh Keller end
