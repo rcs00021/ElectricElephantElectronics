@@ -50,3 +50,28 @@ CREATE TABLE POI(
 GO
 
 --Josh Keller end
+
+--Ryan Sladic Start 
+--Make AutoPart table
+
+CREATE TABLE AutoPart
+(
+    PNum INT PRIMARY KEY,
+    PManu VARCHAR(50),
+    PCategory VARCHAR(50) CHECK (PCategory IN ('Mechanical', 'Cosmetic')),
+    PCountry VARCHAR(50),
+    PPrice INT,
+    PDescription VARCHAR(50)
+);
+
+--Creating the VEHICLE table
+-- Creating the VEHICLE table - RYAN SLADIC 
+CREATE TABLE VEHICLE
+(
+    VIN INT PRIMARY KEY,
+    VMake VARCHAR(50),
+    VModel VARCHAR(50),
+    VYear INT
+);
+
+-- End Ryan Sladic 
