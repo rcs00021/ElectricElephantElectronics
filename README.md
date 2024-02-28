@@ -33,7 +33,7 @@ A project this ambitious undoubtedly has a need for database integration and sto
 
 ## ChatGPT
 
-### AddDriver Mock Data Prompt
+### Driver Mock Data Prompt
 
 ```
 Working with SQL server, fill this table with mock data - around 20 entries should be fine
@@ -52,7 +52,7 @@ CREATE TABLE [dbo].[Driver](
 GO
 ```
 
-### findPOIByRadius Mock Data Prompt
+### POI Mock Data Prompt
 
 ```
 Working with sql server, generate some mock data for this table. POI examples are rest areas, truck stops, etc.
@@ -67,6 +67,18 @@ CREATE TABLE [dbo].[POI](
 	[POI_State] [varchar](50) NULL,
 	[POI_ZIP] [int] NULL
 )
+```
+
+### VEHICLE Mock Data Prompt
+
+```
+Generate data for a table named “VEHICLE” with VIN (int), VMake VARCHAR(50), VModel VARCHAR(50), VYear (int) 20 lines
+```
+
+### AutoPart Mock Data Prompt
+
+```
+Generate data for a table named “AutoPart” with PNum (int), PManu VARCHAR(50), PCategory VARCHAR(50), PCountry VARCHAR(50), PPrice (int) 
 ```
 
 ## Other
